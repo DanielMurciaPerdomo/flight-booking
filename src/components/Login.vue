@@ -3,18 +3,18 @@
        <div class="row align-items-center h-100">
          <div class="col-6 mx-auto">
             <div class="card" >
-                <div class="card-body text-center">
-                    <img src="@/assets/avion.jpg" class="card-text" style="height: 15rem; border-radius: 10px;"  alt="Un avion de tema"/>
+                <div class="col-10 mx-auto">
+                    <img src="@/assets/avion.jpg" class="card-img" style="height: 15rem; border-radius: 10px;"  alt="Un avion de tema"/>
                 </div>
                 <div class="jumbotron">
                     <div class="card-header">
-                        <h1 class="display-4 text-center">Login</h1>
+                        <h1 class="display-4 text-center">Ingreso</h1>
                     </div>
                     <div class="card-body">
                         <form>
                         <div class="form-group">
                             <label for="username">Usuario</label>
-                            <input type="text" class="form-control" id="username" aria-describedby="usernameHelp" placeholder=" Dirección del correo electronico">
+                            <input type="email" class="form-control" id="username" aria-describedby="usernameHelp" placeholder=" Dirección del correo electronico">
                         </div>
                         <div class="form-group">
                             <label for="password">Contraseña</label>
