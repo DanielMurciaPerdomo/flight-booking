@@ -6,6 +6,7 @@
     <!-- <SignUp /> -->
     <!-- <Navbar /> -->
     <!-- <Login />  -->
+    <hr />
     <Footer />
   </div>
 </template>

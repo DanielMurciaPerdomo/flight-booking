@@ -72,6 +72,7 @@
                                 <input type="text" class="form-control" id="numeroTelefono" required>
                             </div>
                             <button type="submit" class="btn btn-primary">Registrar</button>
+                            <button type="button" @click="navigateToInicio" class="btn btn-danger">Volver</button>
                         </div>
                     </div>
                 </form>
@@ -84,6 +85,12 @@
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: 'Sign-up',
+
+  methods:{
+    navigateToInicio(){
+        this.$router.push('/inicio');
+    }
+  }
 }
 </script>
 <style>
@@ -92,5 +99,15 @@ export default {
 }
 .form-control{
     margin-top: 10px;
+}
+button {
+    margin-top: 35px;
+    margin-left: 15px;
+}
+
+button:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 </style>

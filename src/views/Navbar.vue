@@ -3,7 +3,7 @@
     <div class="row align-items-center h-100">
       <div class="col-20 mx-auto">
         <div class="card text-bg-primary">
-          <div class="card-body">
+          <div class="card-body p-0">
             <nav class="navbar navbar-expand-lg bg-primary">
               <div class="container-fluid">
                 <a class="navbar-brand text-light" href="#">Inicio</a>
@@ -50,3 +50,9 @@ export default {
   name: 'Nav-bar',
 }
 </script>
+
+<style>
+.my-narbar-card{
+  margin-bottom: 20px;
+}
+</style>
