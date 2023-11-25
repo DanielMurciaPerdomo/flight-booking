@@ -35,10 +35,6 @@
                                 <label for="correo">Correo</label>
                                 <input type="email" class="form-control" id="correo" required placeholder="Este será su usuario">
                             </div>
-                            <div class="form-group">
-                                <label for="correo">Correo</label>
-                                <input type="email" class="form-control" id="correo" required placeholder="Este será su usuario">
-                            </div>
                             <div class="d-flex">
                                 <div class="flex-grow-1">
                                     <div class="form-group">
@@ -71,8 +67,8 @@
                                 <label for="numeroTelefono">Numero de telefono</label>
                                 <input type="text" class="form-control" id="numeroTelefono" required>
                             </div>
-                            <button type="submit" class="btn btn-primary">Registrar</button>
-                            <button type="button" @click="navigateToInicio" class="btn btn-danger">Volver</button>
+                            <button id="registro" type="submit" class="btn btn-primary">Registrar</button>
+                            <button id="volver" type="button" @click="navigateToInicio" class="btn btn-danger">Volver</button>
                         </div>
                     </div>
                 </form>
@@ -97,10 +93,7 @@ export default {
 .form-group{
     margin-bottom: 20px;
 }
-.form-control{
-    margin-top: 10px;
-}
-button {
+#registro, #volver {
     margin-top: 35px;
     margin-left: 15px;
 }
