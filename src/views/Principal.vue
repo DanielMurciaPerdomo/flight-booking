@@ -1,8 +1,10 @@
+
+
 <template>
     <div>
         <component :is="navbarComponent"></component>
         <hr />
-        <component :is="homeComponent" :items="items"></component>
+        <component :is="homeComponent" :vuelos="vuelos"></component>
     </div>
 </template>
 
@@ -21,20 +23,20 @@ export default{
         return{
             navbarComponent: null,
             homeComponent:  'Home',
-            items :[{
-                        title: 'Item 1',
-                        description: 'Description of Item 1',
-                        date: '2021-08-16'
+            vuelos :[{
+                        title: 'Avianca',
+                        description: 'Vuelo en Airbuz 320',
+                        date: '2021-08-16',
                     },
                     {
-                        title: 'Item 2',
-                        description: 'Description of Item 2',
-                        date: '2021-08-17'
+                        title: 'Wingo',
+                        description: 'Vuelo en Airbuz 540',
+                        date: '2021-08-17',
                     },
                     {
-                        title: 'Item 3',
-                        description: 'Description of Item 3',
-                        date: '2021-08-18'
+                        title: 'Latam',
+                        description: 'Vuelo en Avioneta',
+                        date: '2021-08-18',
                     }
 ]
         }
@@ -44,3 +46,5 @@ export default{
     }
 }
 </script>
+
+

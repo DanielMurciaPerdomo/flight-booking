@@ -39,18 +39,13 @@ export default {
   methods: {
         checkForm: function (e){
             const username = this.correo;
-            console.log(username);
             const password = this.contraseña;
-            console.log(password);
 
             if(username && password){
-                if (username == "danielmurciap@gmail.com" && password == "DFMP2002") {
-                    this.$router.push('/principal');
-                }             
+                this.$router.push('/principal');
             }else {
                 alert('Por favor, complete todos los campos.');
             } 
-         
             e.preventDefault();
         },
     navigateToRegistro(){
